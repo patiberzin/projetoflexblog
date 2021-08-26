@@ -1,0 +1,187 @@
+/*Estilos Gerais*/
+
+body, h1, h2, p, ul, li, a { /*Resetando estilos já existentes*/
+    margin: 0px; 
+    padding: 0px;
+}
+
+body {
+    font-family: "Nunito", Helvetica, Arial, Sans-serif;
+    color: #222222;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%; /*Para ajudar na responsividade*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Superinfo - Barrinha superior*/
+.superinfo-bg {
+    background-color: #122ab2;
+    color: white;
+}
+
+.superinfo {
+    max-width: 960px; /*Largura dos textos do menu, de acordo com o grid do Figma*/
+    margin: 0 auto; /*Alinha ao centro*/
+    display: flex; /*Para ficar um ao lado do outro*/
+    justify-content: space-between; /*Para alinhar com espaçamento ao meio*/
+    flex-wrap: wrap; /*Ocorre quebra para a próxima linha*/
+    padding-top: 10px;
+}
+
+.superinfo p, .superinfo a {
+    margin: 0 10px 10px 10px; /*Para centralizar na barrinha o p e o a*/
+}
+
+.superinfo a {
+    color: white;
+}
+
+/*Menu*/
+.menu-bg {
+    background-color: #2c70ff;
+}
+
+.menu {
+    max-width: 960px; /*Largura dos textos do menu, de acordo com o grid do Figma*/
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex; /*Fica um ao lado do outro. Menos os lis, porque o flex item é o nav apenas*/
+    flex-wrap: wrap;
+    justify-content: space-between; /*Criou espaço no meio dos dois (a e nav)*/
+    align-items: center; /*Fica no centro de cima para baixo*/
+}
+
+.menu a {
+    color: white;
+}
+
+.menu-logo a {
+    font-size: 2.25em; /*36px que é o tamanho, dividido pela base que é 16px do browser*/
+    font-weight: bold;
+    margin: 0 10px; /*Distância entre o início da letra F e o início do grid Figma*/
+}
+
+.menu-nav ul {
+    display: flex; /*Posso ter flex dentro de flex. Agora os lis estão um ao lado do outro*/
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em; /*20px dividido por 16px*/
+    display: block; /*Por padrão o a é um display inline e queremos influenciar no padding dele*/
+    padding: 10px; /*Cria uma área de contato maior*/
+
+}
+
+.menu-nav a:hover {
+    background: #122ab2;
+}
+
+/*Introdução*/
+.introducao {
+
+}
+
+/*Sobre*/
+.sobre {
+
+}
+
+#sobre {
+
+}
+
+.sobre-info {
+
+}
+
+.sobre-img {
+
+}
+
+/*Produtos*/
+.produtos {
+
+}
+
+#produtos {
+
+}
+
+.produtos-container {
+
+}
+
+.produtos-item {
+
+}
+
+.purple {
+
+}
+
+.pink {
+
+}
+
+.blue {
+
+}
+
+/*Preço*/
+.preco {
+
+}
+
+#preco {
+
+}
+
+.preco-item {
+
+}
+
+/*Qualidade*/
+.qualidade {
+
+}
+
+#qualidade {
+
+}
+
+.qualidade-item {
+
+}
+
+/*Newsletter*/
+.newsletter {
+
+}
+
+.newsletter-info {
+    
+}
+
+.newsletter-form {
+    
+}
+
+/*Footer*/
+.footer {
+
+}
