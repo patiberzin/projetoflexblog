@@ -266,15 +266,47 @@ img {
 }
 /*Qualidade*/
 .qualidade {
-
+    max-width: 960px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#qualidade {
-
+.qualidade-item { /*O layout vai ficar sempre em 3, quando diminuir a tela, vai cair para 2*/
+    flex: 1 1 300px;
+    margin: 20px 10px;
 }
 
-.qualidade-item {
+.qualidade-item h2 {
+    font-size: 2.25em;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+}
 
+.qualidade-item h2::before { /* É o pseudo element que vem antes do item*/
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before { 
+    background: #ae81ff; /*3n+1 Eu quero que o 1 seja selecionado e depois o terceiro item a partir do 1*/
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before { 
+    background: #f9265e; /*3n+2 Eu quero que o 2 seja selecionado e depois o terceiro item a partir do 2*/
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before { 
+    background: #66d9eb; /*3n+3 Eu quero que o 3 seja selecionado e depois o terceiro item a partir do 3*/
+}
+
+.qualidade-item p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
 }
 
 /*Newsletter*/
